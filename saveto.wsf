@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<package>
+    <job id="saveto-wd120">
+        <runtime>
+            <description>
+                Save data to external disk.
+                //job:saveto-wd120 (default):
+                    Save 'HITACHI 250Go' on H:\ to"WD PASSPORT 120Go" on J:\
+                //job:saveto-photo:
+                    Save 'HITACHI 250Go' on H:\ to "FUJISTU 220Go" on K:\
+                //job:saveto-f220:
+                    Save 'HITACHI 250Go' on H:\ to "FUJISTU 220Go" on K:\
+            </description>
+        </runtime>
+        <!-- Includes -->
+        <script language="VBScript" src="sys/inc/string.vbs"/>
+        <script language="VBScript" src="sys/inc/filesystem.vbs"/>
+        <script language="VBScript" src="sys/inc/option.vbs"/>
+        <script language="VBScript" src="sys/inc/date.vbs"/>
+        <script language="VBScript" src="app/saveto/inc/saveto.vbs"/>
+        <!-- Load common configuration -->
+        <script language="VBScript" src="sys/cfg/main.vbs"/>
+        <script language="VBScript" src="app/saveto/cfg/savetoWD120.vbs"/>
+        <script language="VBScript" src="app/saveto/cfg/saveto.vbs"/>
+        <!-- Start -->
+        <script language="VBScript">
+            Option Explicit
+            separateLine
+            saveTo
+        </script>
+    </job>
+    <job id="saveto-photo">
+        <runtime>
+            <description>
+                Save 'HITACHI 250Go' on H:\ to "FUJISTU 220Go" on K:\
+            </description>
+        </runtime>
+        <!-- Includes -->
+        <script language="VBScript" src="sys/inc/string.vbs"/>
+        <script language="VBScript" src="sys/inc/filesystem.vbs"/>
+        <script language="VBScript" src="sys/inc/option.vbs"/>
+        <script language="VBScript" src="sys/inc/date.vbs"/>
+        <script language="VBScript" src="app/saveto/inc/saveto.vbs"/>
+        <!-- Load common configuration -->
+        <script language="VBScript" src="sys/cfg/main.vbs"/>
+        <script language="VBScript" src="app/saveto/cfg/savetoPhoto.vbs"/>
+        <script language="VBScript" src="app/saveto/cfg/saveto.vbs"/>
+        <!-- Start -->
+        <script language="VBScript">
+            Option Explicit
+            separateLine
+            saveTo
+        </script>
+    </job>
+    <job id="saveto-f220">
+        <runtime>
+            <description>
+                Save 'HITACHI 250Go' on H:\ to "FUJISTU 220Go" on K:\
+            </description>
+        </runtime>
+        <!-- Includes -->
+        <script language="VBScript" src="sys/inc/string.vbs"/>
+        <script language="VBScript" src="sys/inc/filesystem.vbs"/>
+        <script language="VBScript" src="sys/inc/option.vbs"/>
+        <script language="VBScript" src="sys/inc/date.vbs"/>
+        <script language="VBScript" src="app/saveto/inc/saveto.vbs"/>
+        <!-- Load common configuration -->
+        <script language="VBScript" src="sys/cfg/main.vbs"/>
+        <script language="VBScript" src="app/saveto/cfg/savetoF220.vbs"/>
+        <script language="VBScript" src="app/saveto/cfg/saveto.vbs"/>
+        <!-- Start -->
+        <script language="VBScript">
+            Option Explicit
+            separateLine
+            saveTo
+        </script>
+    </job>
+</package>

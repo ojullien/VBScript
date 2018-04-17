@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<job id="unittest">
+    <runtime>
+        <description>
+            unit test.
+        </description>
+    </runtime>
+    <!-- Includes -->
+    <script language="VBScript" src="sys/inc/string.vbs"/>
+    <script language="VBScript" src="sys/inc/filesystem.vbs"/>
+    <script language="VBScript" src="sys/inc/option.vbs"/>
+    <script language="VBScript" src="sys/inc/date.vbs"/>
+    <script language="VBScript" src="app/unittest/inc/unittest.vbs"/>
+    <!-- Load common configuration -->
+    <script language="VBScript" src="sys/cfg/main.vbs"/>
+    <script language="VBScript" src="app/unittest/cfg/unittest.vbs"/>
+    <!-- Start -->
+    <script language="VBScript">
+        Option Explicit
+        separateLine
+        'test_isString
+        'separateLine
+        'test_isStringAndNotEmpty
+        'separateLine
+        'test_pwd
+        'separateLine
+        'test_getFileName
+        'separateLine
+        'test_existsFolder
+        'separateLine
+        'test_existsFile
+        'separateLine
+        test_cleanDirectory
+        WScript.Quit
+    </script>
+</job>
