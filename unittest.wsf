@@ -2,7 +2,7 @@
 <job id="unittest">
     <runtime>
         <description>
-            unit test.
+            unit testing.
         </description>
     </runtime>
     <!-- Includes -->
