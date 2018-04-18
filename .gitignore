@@ -1,10 +1,4 @@
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-test.ps1
-[Ll]og/*
-*.log
-build/
-temp-*
+.vscode/
+log/
+tmp/
+desktop.ini
