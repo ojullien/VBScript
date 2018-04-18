@@ -5,3 +5,6 @@
 !.vscode/extensions.json
 test.ps1
 [Ll]og/*
+*.log
+build/
+temp-*
